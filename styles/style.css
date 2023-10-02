@@ -70,7 +70,6 @@ ol {
 /*весь блок контента*/
 
 .content {
-  padding: 133px 30px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -85,18 +84,18 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
+  inline-size: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-block-end: 16px;
   position: relative;
 }
 
 .result__video {
   width: 100%;
   height: 100%;
-  max-height: 100vh ;
   margin: 0 auto;
   object-position: center;
+  object-fit:cover;
 }
 
 .search-form {
@@ -140,22 +139,16 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
-  border-left: 1px solid #FFF;
-  border-right: 1px solid #FFF;
+  /*border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;*/
 }
 
-.search-form__textfield:focus {
-  outline: none;
-  border-left: 1px solid #FFF;
-  border-right: 1px solid #FFF;
-}
-
-/*.search-form__textfield:has(:focus-visible) {
+.search-form__textfield:has(:focus-visible) {
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   outline: 1px solid #FFF;
   outline-offset: 1px;
-}*/
+}
 
 .search-form__textfield:hover {
   text-decoration: none;
@@ -202,7 +195,7 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__label:ho {
+.search-form__label:hover {
   cursor: pointer;
 }
 
@@ -335,6 +328,10 @@ ol {
 }
 
 .content__video-card:focus {
+  outline: none;
+}
+
+.content__video-card:focus-visible {
   outline: 1px solid #FFF;
   outline-offset: 2px;
 }
